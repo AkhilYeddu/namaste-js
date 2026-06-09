@@ -35,3 +35,8 @@ function example(Parameters){
 }
 
 example(Arguements)
+
+// First Class Functions = ability to be used like values
+// First Class citizens
+
+// Arrow Functions
