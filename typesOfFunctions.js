@@ -12,9 +12,9 @@ b(); // function expressions are not hoisted
 
 // Anonymous Function
 
-function(){
-    console.log("hi")
-}
+// function(){
+//     console.log("hi")
+// }
 
 // Named Function Expression
 
