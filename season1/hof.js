@@ -20,3 +20,4 @@ Array.prototype.calculate = function(logic){
 }
 
 console.log(circles.calculate(area))
+console.log(circles.calculate(diameter))
