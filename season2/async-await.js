@@ -4,14 +4,19 @@ const p = new Promise(function(resolve, reject){
     resolve("Promise resolved value!");
 });
 
-
-async function getData(){
-    return p;
+async function handlePromise(){
+    const val = await p;
+    console.log(val)
 }
+handlePromise();
 
-const dataPromise = getData();
-console.log(dataPromise)
 
-dataPromise.then(function(res){
-    console.log(res);
-})
+// ********** V/S **********
+
+
+function getData(){
+    p.then(function(res){
+        console.log(res);
+    })
+}
+getData()
