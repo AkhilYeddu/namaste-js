@@ -1,7 +1,12 @@
 // async - keyword that is used before a function to create an async function
 
+const p = new Promise(function(resolve, reject){
+    resolve("Promise resolved value!");
+});
+
+
 async function getData(){
-    return "Namaste";
+    return p;
 }
 
 const dataPromise = getData();
