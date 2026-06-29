@@ -3,7 +3,7 @@
 const p1 = new Promise(function(resolve, reject){
     setTimeout(function(){
         resolve("promise fullfilled!")
-    },5000)
+    },2000)
     
     
 });
@@ -11,7 +11,7 @@ const p1 = new Promise(function(resolve, reject){
 const p2 = new Promise(function(resolve, reject){
     setTimeout(function(){
         resolve("promise fullfilled!")
-    },2000)
+    },5000)
     
     
 });
