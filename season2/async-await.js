@@ -3,7 +3,7 @@
 const p1 = new Promise(function(resolve, reject){
     setTimeout(function(){
         resolve("promise fullfilled!")
-    },2000)
+    },10000)
     
     
 });
@@ -16,12 +16,13 @@ const p2 = new Promise(function(resolve, reject){
     
 });
 
-async function handlePromise(){   // here js engine waits till the promise is resolved
-    console.log("print me first!")
+// Both timers are already running before handlePromise() starts.
+// handlePromise() doesnt block the main thread.
+async function handlePromise(){   
     const val1 = await p1;
     console.log("checking1")
     console.log(val1)
-                    // waits for 10 secs at p1, then the p2 gets printed simultaneously
+                    
     const val2 = await p2;
     console.log("checking2")
     console.log(val2)
