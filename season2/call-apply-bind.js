@@ -7,6 +7,7 @@ const name = {
     lastName : "Yeddu",
    
 }
+// function borrowing
 printName.call(name, "Vizag", "Andhra Pradesh");
 
 
@@ -15,3 +16,8 @@ const name2 = {
     lastName : "Yeddu"
 }
 printName.call(name2, "Hyderabad", "Telangana");
+// V/S
+printName.apply(name2, ["Hyderabad", "Telangana"]) // apply method 
+
+
+
