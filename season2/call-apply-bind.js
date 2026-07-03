@@ -19,5 +19,10 @@ printName.call(name2, "Hyderabad", "Telangana");
 // V/S
 printName.apply(name2, ["Hyderabad", "Telangana"]) // apply method 
 
+console.log("bind method:")
+// bind method -> returns us a copy of the method, which we can use later on
+const printMyName = printName.bind(name2,"Hyderabad", "Telangana") // returns us the copy of the function
+printMyName()
+
 
 
