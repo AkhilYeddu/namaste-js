@@ -7,6 +7,8 @@
 // body.append(div)
 
 // modifying element text
-div.innerText = "Hello Bro"
+// div.innerText = "Hello Bro"
 
 const div = document.querySelector("div")
+console.log(div.innerText)
+console.log(div.textContent)
