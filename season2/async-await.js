@@ -11,7 +11,7 @@ const p1 = new Promise(function(resolve, reject){
 const p2 = new Promise(function(resolve, reject){
     setTimeout(function(){
         resolve("promise fullfilled!")
-    },5000)
+    },20000)
     
     
 });
@@ -19,6 +19,9 @@ const p2 = new Promise(function(resolve, reject){
 // Both timers are already running before handlePromise() starts.
 // handlePromise() doesnt block the main thread.
 async function handlePromise(){   
+    console.log("Hello World!");
+
+    
     const val1 = await p1;
     console.log("checking1")
     console.log(val1)
