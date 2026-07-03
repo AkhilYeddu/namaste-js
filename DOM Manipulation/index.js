@@ -1,11 +1,12 @@
 const body = document.body
-const div = document.createElement("div")
-const strong = document.createElement("strong")
+const div = document.querySelector("div")
+const span1 = document.querySelector("#hi")
+const span2 = document.getElementById("bye")
 
-strong.textContent = "Hello im Strong!"
+span2.remove()
 
-div.append(strong)
-body.append(div)
+
+
 
 
 
